@@ -1,0 +1,32 @@
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.05);
+  }
+}
+
+.blink {
+  animation: blink 1.5s infinite ease-in-out;
+  color: #fff;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+}
+
+
+.modal-content {
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  background: linear-gradient(135deg, #222, #444);
+  color: #fff;
+}
+
+.modal-content:hover {
+  transform: scale(1.02);
+}
+
+.spinner-grow {
+  width: 3rem;
+  height: 3rem;
+}
